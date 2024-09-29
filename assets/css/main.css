@@ -3511,7 +3511,7 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			border-radius: 0;
-			width: 75%;
+			width: 50%;
 		}
 
 			.banner.style1 .image img {
@@ -3662,6 +3662,7 @@ input, select, textarea {
 			-ms-object-position: right;
 			object-position: right;
 		}
+
 
 /* Banner (style2) */
 
