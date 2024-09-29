@@ -345,7 +345,8 @@ input, select, textarea {
 	}
 
 	hr {
-		border-bottom-color: rgba(225, 225, 225, 0.9);
+		border-bottom-color: #f2f2f2;
+		border-style: solid;
 	}
 
 /* Row */
