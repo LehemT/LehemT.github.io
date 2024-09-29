@@ -324,7 +324,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #47D3E5;
+			color: #47e58e;
 		}
 
 	strong, b {
@@ -336,16 +336,16 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left-color: rgba(0, 0, 0, 0.2);
+		border-left-color: rgba(225, 225, 225, 0.2);
 	}
 
 	code {
-		background: rgba(0, 0, 0, 0.05);
-		border-color: rgba(0, 0, 0, 0.2);
+		background: rgba(225, 225, 225, 0.05);
+		border-color: rgba(225, 225, 225, 0.2);
 	}
 
 	hr {
-		border-bottom-color: rgba(0, 0, 0, 0.2);
+		border-bottom-color: rgba(225, 225, 225, 0.2);
 	}
 
 /* Row */
