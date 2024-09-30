@@ -8428,7 +8428,7 @@ input, select, textarea {
 			#wrapper > .invert input[type="radio"]:checked + label:before {
 				background-color: #ffffff;
 				border-color: #ffffff;
-				color: #000000;
+				color: #ffffff;
 			}
 
 			#wrapper > .invert input[type="checkbox"]:focus + label:before,
