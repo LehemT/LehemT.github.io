@@ -2245,13 +2245,13 @@ input, select, textarea {
 	.project-card {
 	    position: relative;
 	    width: 200px;
-	    overflow: hidden; 
+	    overflow: hidden;
+	    transition: transform 0.3s ease;
 	}
 	
 	.project-image {
 	    width: 100%;
 	    height: auto;
-	    transition: transform 0.3s ease;
 	}
 	
 	.project-info {
@@ -2271,7 +2271,7 @@ input, select, textarea {
 	    padding: 10px;
 	}
 	
-	.project-card:hover .project-image {
+	.project-card:hover {
 	    transform: scale(1.5); 
 	}
 	
