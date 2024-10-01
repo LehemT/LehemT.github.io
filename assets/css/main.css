@@ -6896,6 +6896,7 @@ input, select, textarea {
 			overflow: hidden;
 			width: 22.5rem;
 			max-width: 75vw;
+			transition: transform 0.3s ease;
 		}
 
 			.gallery.style2 article .image {
@@ -6964,6 +6965,7 @@ input, select, textarea {
 
 			.gallery.style2 article:hover .caption {
 				opacity: 1;
+				transform: scale(1.05);
 			}
 
 		@media screen and (max-width: 980px) {
