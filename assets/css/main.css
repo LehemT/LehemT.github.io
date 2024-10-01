@@ -5882,14 +5882,18 @@ input, select, textarea {
 /* Gallery (transitions) */
 
 	.gallery.onload-fade-in article .image img {
-		-moz-transition: opacity 0.75s ease-in-out;
-		-webkit-transition: opacity 0.75s ease-in-out;
-		-ms-transition: opacity 0.75s ease-in-out;
-		transition: opacity 0.75s ease-in-out;
+		-moz-transition: opacity 0.75s ease-in-out, transform 0.25s ease;;
+		-webkit-transition: opacity 0.75s ease-in-out, transform 0.25s ease;;
+		-ms-transition: opacity 0.75s ease-in-out, transform 0.25s ease;;
+		transition: opacity 0.75s ease-in-out, transform 0.25s ease;;
 		-moz-transition-delay: 4.8s;
 		-webkit-transition-delay: 4.8s;
 		-ms-transition-delay: 4.8s;
 		transition-delay: 4.8s;
+	}
+	
+	.gallery.onload-fade-in article .image img:hover {
+	    transform: scale(1.05); 
 	}
 
 	.gallery.onload-fade-in article:nth-child(1) .image img {
@@ -6136,6 +6140,10 @@ input, select, textarea {
 		-webkit-transition-delay: 4.8s;
 		-ms-transition-delay: 4.8s;
 		transition-delay: 4.8s;
+	}
+
+	.gallery.onload-fade-in article .image img:hover {
+	    transform: scale(1.05);
 	}
 
 	.gallery.onscroll-fade-in article:nth-child(1) .image img {
