@@ -8627,3 +8627,11 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+
+/* Keep Skills & Interests lists left-aligned on narrow screens */
+@media screen and (max-width: 736px) {
+    #more .content > ul:not(.actions) {
+        text-align: left;
+    }
+}
