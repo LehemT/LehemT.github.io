@@ -8655,11 +8655,20 @@ input, select, textarea {
 }
 
 
-/* About Me and Skills & Interests image sizing */
-@media screen and (max-width: 980px) {
+
+/* Resize About Me and Skills images only on narrow portrait screens */
+@media screen and (max-width: 736px) and (orientation: portrait) {
     #about.spotlight.style1 .image,
     #more.spotlight.style1 .image {
         height: 26rem;
-        align-self: center;
+        overflow: hidden;
+    }
+
+    #about.spotlight.style1 .image img,
+    #more.spotlight.style1 .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
+
