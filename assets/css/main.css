@@ -8629,6 +8629,7 @@ input, select, textarea {
 			}
 
 
+
 /* Keep Skills & Interests lists left-aligned on narrow screens */
 @media screen and (max-width: 736px) {
     #more .content > ul:not(.actions) {
@@ -8647,7 +8648,7 @@ input, select, textarea {
     object-fit: cover;
 }
 
-/* Smaller screens */
+/* Smaller project images */
 @media screen and (max-width: 980px) {
     .project-entry.spotlight.style1 .image {
         height: 18rem;
@@ -8679,20 +8680,43 @@ input, select, textarea {
     object-position: center;
 }
 
-/* Smaller browser windows */
-@media screen and (max-width: 980px) {
-    #about.spotlight.style1 .image,
-    #more.spotlight.style1 .image {
-        width: 50%;
-    }
-}
 
-/* Narrow portrait screens */
-@media screen and (max-width: 736px) and (orientation: portrait) {
+/* Full-width About and Skills images on narrow portrait screens */
+@media screen and (max-width: 980px) and (orientation: portrait) {
+
+    /* Stack image above text */
+    #about.spotlight.style1,
+    #more.spotlight.style1 {
+        flex-direction: column-reverse;
+    }
+
+    #about.spotlight.style1 .content,
+    #more.spotlight.style1 .content {
+        width: 100%;
+    }
+
+    /* Make images span the section width */
     #about.spotlight.style1 .image,
     #more.spotlight.style1 .image {
-        width: min(75%, 22rem);
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        max-width: none;
+        aspect-ratio: auto;
+        align-self: stretch;
+        margin: 0;
+    }
+
+    /* Taller frame for standing photo */
+    #about.spotlight.style1 .image {
+        height: 34rem;
+    }
+
+    /* Slightly shorter frame for Skills image */
+    #more.spotlight.style1 .image {
+        height: 28rem;
+    }
+
+    /* Prioritize lower portion of standing photo */
+    #about.spotlight.style1 .image img {
+        object-position: center 60%;
     }
 }
