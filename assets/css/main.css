@@ -8655,48 +8655,44 @@ input, select, textarea {
 }
 
 
-
-/* About Me and Skills & Interests image frames 4:3 */
+/* About Me and Skills & Interests image frames */
 #about.spotlight.style1 .image,
 #more.spotlight.style1 .image {
-    width: 24rem;
+    width: 35%;
     min-width: 0;
-    height: 32rem;
+    height: auto;
+    aspect-ratio: 3 / 4;
     align-self: center;
+    position: relative;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 #about.spotlight.style1 .image img,
 #more.spotlight.style1 .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-/* Keep the bottom of the About Me photo visible */
-#about.spotlight.style1 .image img {
-    object-position: center bottom;
-}
-
-/* Smaller screens */
+/* Smaller browser windows */
 @media screen and (max-width: 980px) {
     #about.spotlight.style1 .image,
     #more.spotlight.style1 .image {
-        width: 19.5rem;
-        max-width: 100%;
-        height: 26rem;
+        width: 50%;
     }
 }
 
-/* Centre photo frames when sections stack vertically */
+/* Narrow portrait screens */
 @media screen and (max-width: 736px) and (orientation: portrait) {
     #about.spotlight.style1 .image,
     #more.spotlight.style1 .image {
+        width: min(75%, 22rem);
         margin-left: auto;
         margin-right: auto;
     }
 }
-
-
-
