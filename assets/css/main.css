@@ -8653,3 +8653,13 @@ input, select, textarea {
         height: 18rem;
     }
 }
+
+
+/* About Me and Skills & Interests image sizing */
+@media screen and (max-width: 980px) {
+    #about.spotlight.style1 .image,
+    #more.spotlight.style1 .image {
+        height: 26rem;
+        align-self: center;
+    }
+}
