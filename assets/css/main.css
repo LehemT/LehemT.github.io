@@ -8635,3 +8635,21 @@ input, select, textarea {
         text-align: left;
     }
 }
+
+
+/* Consistent project image frames */
+.project-entry.spotlight.style1 .image {
+    height: 32rem;
+    align-self: center;
+}
+
+.project-entry.spotlight.style1 .image img {
+    object-fit: cover;
+}
+
+/* Smaller screens */
+@media screen and (max-width: 980px) {
+    .project-entry.spotlight.style1 .image {
+        height: 18rem;
+    }
+}
